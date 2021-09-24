@@ -9,7 +9,7 @@ This sample requires Visual Studio 2019 and [.NET 5 SDK](https://dotnet.microsof
 To use this sample with Git, clone the **WPFAssignment** repository with '_git clone https://github.com/majidzjg/WPFAssignment_'
 
 After cloning the **WPFAssignment** respository, to build the sample, open the solution file in the root directory using Visual Studio 2019 and build the solution and run the project.
-You will see an empty window with **Fetch Data** button. Press the button and the data is presented in 100 square blocks as it has been shown below.
+You will see an empty window with **Fetch Data** button. Press the button and the data is presented in 100 square blocks as it has been shown below. By clicking on a square the data is replaced on all squares.
 
 ![image](https://user-images.githubusercontent.com/28927517/134647080-eaf627e9-f66b-4d04-9fa3-e4a78b82e675.png)
 
