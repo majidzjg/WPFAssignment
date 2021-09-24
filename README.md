@@ -1,5 +1,5 @@
 # WPF-Assignment
-This repo contains a sample that demonstrate the API usage for the Windows Presentation Foundation (**WPF**) in the .NET 5 for Desktop.__
+This repo contains a sample that demonstrate the API usage for the Windows Presentation Foundation (**WPF**) in the .NET 5 for Desktop.  
 It is a simple MVVM architecture that fetches data from an API and renders the result in square blocks.
 
 ## WPF development
