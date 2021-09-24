@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using WPFAssignment.Model;
 using WPFAssignment.ViewModel;
 
 namespace WPFAssignment.Api
@@ -11,18 +12,18 @@ namespace WPFAssignment.Api
         /// <summary>
         /// Fetch posts list from "jsonplaceholder" website
         /// </summary>
-        public static async Task<IList<Post>> GetPostListAsync()
+        public static async Task<IList<PostModel>> GetPostListAsync()
         {
             try
             {
-                IList<Post> postList = new List<Post>();
+                IList<PostModel> postList = new List<PostModel>();
                 var httpResponseMessage = await ApiHelper.GetCall("https://jsonplaceholder.typicode.com/posts");
 
                 if (httpResponseMessage.IsSuccessStatusCode)
                 {
                     var result = await httpResponseMessage.Content.ReadAsStringAsync();
 
-                    postList = JsonConvert.DeserializeObject<List<Post>>(result);
+                    postList = JsonConvert.DeserializeObject<List<PostModel>>(result);
                 }
 
                 return postList;

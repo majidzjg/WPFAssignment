@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using WPFAssignment.Api;
+using WPFAssignment.Model;
 
 namespace WPFAssignment.ViewModel
 {
     class MainWindowViewModel : INotifyPropertyChanged
     {
-        private IList<Post> _postDetails;
+        private IList<PostModel> _postDetails;
         private List<List<int>> _ids;
         private List<List<int>> _userIds;
 

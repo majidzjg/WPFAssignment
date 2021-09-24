@@ -1,6 +1,6 @@
-﻿namespace WPFAssignment.ViewModel
+﻿namespace WPFAssignment.Model
 {
-    public class Post
+    public class PostModel
     {
         public int Id { get; set; }
         public int UserId { get; set; }
